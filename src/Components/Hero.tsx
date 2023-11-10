@@ -59,7 +59,7 @@ export const Hero = () => {
                     </div>
                     <div className="col-sm-12 col-md-6 d-none d-md-block">
                         <div className="hero-image">
-                            <img src="img/hero.png" alt="Hero Image" />
+                            <img src="img/hero.png" alt="Hero Image" /> 
                         </div>
                     </div>
                 </div>
