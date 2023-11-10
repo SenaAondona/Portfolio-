@@ -10,6 +10,7 @@ import Social from '../Components/Social'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Testimonial from '../Components/Testimonial'
 const HomePage = () => {
     useEffect(() => {
         AOS.init();
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Experience />
       <Prices />
       <Portfolio />
+      <Testimonial />
       <Social />
       <Footer />
     </>

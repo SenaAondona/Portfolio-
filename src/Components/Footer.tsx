@@ -4,11 +4,11 @@ const Footer = () => {
             <div className="container-fluid">
                 <div className="container">
                     <div className="footer-info">
-                        <h2>Kate Winslet</h2>
-                        <h3>123 Street, New York, USA</h3>
+                        <h2>Sena Aondona</h2>
+                        <h3>Abuja, Nigeria</h3>
                         <div className="footer-menu">
-                            <p>+012 345 67890</p>
-                            <p>info@example.com</p>
+                            <p>+2347087567397</p>
+                            <p>senaaondonajulia@gmail.com</p>
                         </div>
                         <div className="footer-social">
                             <a href=""><i className="fab fa-twitter"></i></a>

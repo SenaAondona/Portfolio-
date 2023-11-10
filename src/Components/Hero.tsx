@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import ReactTypingEffect from 'react-typing-effect';
 // import Typed from "typed.js";
 
 export const Hero = () => {
@@ -42,13 +43,17 @@ export const Hero = () => {
                         <div className="hero-content">
                             <div className="hero-text">
                                 <p>I'm</p>
-                                <h1>Sena</h1>
-                                <h2 ref={el}></h2>
+                                <h1>Sena Aondona</h1>
+                                <ReactTypingEffect
+                                    text={["Web Designer","Web Developer", "Front End Developer", "Apps Designer", "Apps Developer"]}
+                                />
+                                {/* <h2 ref={el}></h2> */}
+                                <p className="about">Meet Sena Julia Aondona, a dynamic force in the digital realm with a passion for transforming ideas into online success stories. With a rich tapestry of skills, Sena is not just a digital strategist and marketer; she's a seasoned website manager and developer, as well as a reliable IT support expert.</p>
                                 {/* <div className="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div> */}
                             </div>
                             <div className="hero-btn">
-                                <a className="btn" style={{borderRadius: 0}} href="">Hire Me</a>
-                                <a className="btn" style={{borderRadius: 0}} href="">Contact Me</a>
+                                <a className="btn" style={{ borderRadius: 0 }} href="">Hire Me</a>
+                                <a className="btn" style={{ borderRadius: 0 }} href="">Contact Me</a>
                             </div>
                         </div>
                     </div>
