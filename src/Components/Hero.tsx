@@ -1,4 +1,4 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 import ReactTypingEffect from 'react-typing-effect';
 // import Typed from "typed.js";
 
@@ -6,7 +6,7 @@ export const Hero = () => {
     // Typed Initiate
 
     // Create Ref element.
-    const el = useRef(null);
+    // const el = useRef(null);
 
     // useEffect(() => {
     //     const typed = new Typed(el.current, {
