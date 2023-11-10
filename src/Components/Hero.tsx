@@ -1,5 +1,5 @@
-import { useRef, useEffect } from "react";
-import Typed from "typed.js";
+import { useRef } from "react";
+// import Typed from "typed.js";
 
 export const Hero = () => {
     // Typed Initiate
@@ -7,23 +7,23 @@ export const Hero = () => {
     // Create Ref element.
     const el = useRef(null);
 
-    useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings: ["Web Designer","Web Developer", "Front End Developer", "Apps Designer", "Apps Developer"], // Strings to display
-            // Speed settings, try diffrent values untill you get good results
-            startDelay: 300,
-            typeSpeed: 100,
-            backSpeed: 20,
-            // backDelay: 100,
-            smartBackspace: false,
-            loop: true
-        });
+    // useEffect(() => {
+    //     const typed = new Typed(el.current, {
+    //         strings: ["Web Designer","Web Developer", "Front End Developer", "Apps Designer", "Apps Developer"], // Strings to display
+    //         // Speed settings, try diffrent values untill you get good results
+    //         startDelay: 300,
+    //         typeSpeed: 100,
+    //         backSpeed: 20,
+    //         // backDelay: 100,
+    //         smartBackspace: false,
+    //         loop: true
+    //     });
 
-        // Destropying
-        return () => {
-            typed.destroy();
-        };
-    }, []);
+    //     // Destropying
+    //     return () => {
+    //         typed.destroy();
+    //     };
+    // }, []);
     // if ($('.hero .hero-text h2').length == 1) {
     //     var typed_strings = $('.hero .hero-text .typed-text').text();
     //     var typed = new Typed('.hero .hero-text h2', {
