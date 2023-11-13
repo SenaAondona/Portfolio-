@@ -1,9 +1,10 @@
+import whatsapp from '../assets/whatsapp.png';
 const Social = () => {
   return (
     <div className="team" id="team">
             <div className="container">
                 <div className="section-header text-center" data-aos="zoom" data-aos-delay="0.1s">
-                    <p>My Team</p>
+                    <p>My Socials</p>
                     <h2>Expert Team Members</h2>
                 </div>
                 <div className="row">
@@ -13,7 +14,7 @@ const Social = () => {
                                 <img src="img/team-1.jpg" alt="Image" />
                             </div>
                             <div className="team-text">
-                                <h2>Mollie Ross</h2>
+                                <h2>Sena Aondona</h2>
                                 <h4>Web Designer</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
@@ -27,7 +28,7 @@ const Social = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.2s">
+                    {/* <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.2s">
                         <div className="team-item">
                             <div className="team-img">
                                 <img src="img/team-2.jpg" alt="Image" />
@@ -86,7 +87,7 @@ const Social = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
