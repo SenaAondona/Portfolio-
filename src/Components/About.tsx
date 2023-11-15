@@ -1,5 +1,3 @@
-import ProgressBar from 'react-bootstrap/ProgressBar';
-import { Waypoint } from 'react-waypoint';
 import { useState } from 'react';
 // import ReactWOW from 'react-wow'
 

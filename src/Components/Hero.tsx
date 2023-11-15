@@ -1,5 +1,5 @@
 // import { useRef } from "react";
-import { PropsWithChildren, useState } from 'react';
+import { useState } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import Modal from 'react-bootstrap/Modal';
 // import Typed from "typed.js";

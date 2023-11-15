@@ -1,4 +1,4 @@
-import whatsapp from '../assets/whatsapp.png';
+// import whatsapp from '../assets/whatsapp.png';
 const Social = () => {
   return (
     <div className="team" id="team">
