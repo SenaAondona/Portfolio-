@@ -10,8 +10,8 @@ const Experience = () => {
                     <div className="timeline-item left" data-aos="slide-left" data-wow-delay="0.1s">
                         <div className="timeline-text">
                             <div className="timeline-date">August 2023  To present.</div>
-                            <h2>Digital Media Strategist: Olayinka Braimoh for Governor</h2>
-                            <h4>Kogi State (AA Gubernatorial Candidate)</h4>
+                            <h2>Digital Media Strategist: Olayinka Braimoh for Governor (AA Gubernatorial Candidate)</h2>
+                            <h4>Kogi State, Nigeria</h4>
                             <p>
                                 As Social Media Strategist for Olayinka Braimoh's Governor Campaign in Kogi State (AA Gubernatorial Candidate), I develop, execute, and manage data-driven social media strategies. I create engaging content, oversee multiple platforms, foster audience engagement, analyze metrics, handle crises, track trends, conduct media outreach, and ensure team collaboration.
                             </p>
