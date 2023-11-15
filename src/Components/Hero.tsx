@@ -51,7 +51,7 @@ export const Hero = () => {
                                 <h1>Sena Aondona</h1>
                                 <ReactTypingEffect
                                     className='d-flex'
-                                    text={["Web Designer", "Web Developer", "Front End Developer", "Apps Designer", "Apps Developer"]}
+                                    text={["Digital Strategist", "Digital Marketer", "Video Editor", "Data Analyst", "Web Developer", "IT Supports", "Graphic Designer"]}
                                 />
                                 {/* <h2 ref={el}></h2> */}
                                 <p className="about">
@@ -83,9 +83,9 @@ export const Hero = () => {
                                         </Button>
                                     </Modal.Footer> */}
                                 </Modal>
-                                <button className="btn btn-primary" onClick={handleShow}>
-                                    {isOpen ? 'Read Less..' : 'Read More...'}
-                                </button>
+                                <a className="btn btn-primary" href="#about">
+                                    Read More...
+                                </a>
                                 {/* <div className="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div> */}
                             </div>
                             <div className="hero-btn">

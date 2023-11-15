@@ -760,6 +760,25 @@ a:focus {
   font-family: "Montserrat", sans-serif !important;
 }
 
+/* .service .service-progress-wrapper {
+  position: relative;
+} */
+
+.service .service-progress {
+  position: absolute;
+  inset: 0;
+  /* opacity: 0.5; */
+  width: 100%;
+}
+
+/* .service .service-item:hover .service-progress {
+  display: block;
+}
+
+.service .service-item:hover .fa {
+  display: none;
+} */
+
 .service .service-item {
   position: relative;
   margin-bottom: 30px;

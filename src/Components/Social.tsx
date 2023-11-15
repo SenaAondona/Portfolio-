@@ -20,10 +20,10 @@ const Social = () => {
                                     Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
                                 </p>
                                 <div className="team-social">
-                                    <a className="btn" href=""><i className="fab fa-twitter"></i></a>
-                                    <a className="btn" href=""><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn" href=""><i className="fab fa-linkedin-in"></i></a>
-                                    <a className="btn" href=""><i className="fab fa-instagram"></i></a>
+                                    <a className="btn" target='_blank' href=" https://www.youtube.com/@Tech.Herstory "><i className="fab fa-youtube"></i></a>
+                                    <a className="btn" target='_blank' href="https://www.facebook.com/profile.php?id=61553217032445&mibextid=LQQJ4d "><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn" target='_blank' href=" http://linkedin.com/in/sena-aondona "><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn" target='_blank' href="https://instagram.com/techherstory?igshid=MWlmY3NuOGszajlmMg%3D%3D&utm_source=qr "><i className="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
