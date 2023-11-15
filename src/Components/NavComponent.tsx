@@ -2,6 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { Children, useEffect, useState } from 'react';
+import logo from '../assets/logo.png'
 
 // import './NavComponent.css';
 export const NavComponent = () => {
@@ -80,7 +81,9 @@ export const NavComponent = () => {
   return (
     <Navbar expand="lg" className="" sticky={sticky} fixed={fixed}>
         <Container fluid>
-        <Navbar.Brand href="#home" className='brand'>SENA</Navbar.Brand>
+        <Navbar.Brand href="#home" className='brand'>
+          <img className='' src={logo} alt="" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

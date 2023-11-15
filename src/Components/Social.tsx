@@ -1,11 +1,11 @@
-// import whatsapp from '../assets/whatsapp.png';
+import whatsapp from '../assets/whatsapp.png';
 const Social = () => {
   return (
     <div className="team" id="team">
             <div className="container">
                 <div className="section-header text-center" data-aos="zoom" data-aos-delay="0.1s">
                     <p>My Socials</p>
-                    <h2>Expert Team Members</h2>
+                    {/* <h2>Expert Team Members</h2> */}
                 </div>
                 <div className="row">
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.0s">
@@ -28,27 +28,27 @@ const Social = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.2s">
+                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.2s">
                         <div className="team-item">
                             <div className="team-img">
-                                <img src="img/team-2.jpg" alt="Image" />
+                                <img src={whatsapp} alt="Whatsapp" />
                             </div>
                             <div className="team-text">
-                                <h2>Dylan Adams</h2>
-                                <h4>Web Developer</h4>
+                                <h2>My whatsapp Link</h2>
+                                {/* <h4>Web Developer</h4> */}
                                 <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    Scan this code with your whatsapp camera to connect with me
                                 </p>
-                                <div className="team-social">
+                                {/* <div className="team-social">
                                     <a className="btn" href=""><i className="fab fa-twitter"></i></a>
                                     <a className="btn" href=""><i className="fab fa-facebook-f"></i></a>
                                     <a className="btn" href=""><i className="fab fa-linkedin-in"></i></a>
                                     <a className="btn" href=""><i className="fab fa-instagram"></i></a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.4s">
+                    {/* <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.4s">
                         <div className="team-item">
                             <div className="team-img">
                                 <img src="img/team-3.jpg" alt="Image" />
