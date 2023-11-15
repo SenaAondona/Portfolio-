@@ -19,7 +19,7 @@ const Experience = () => {
                     </div>
                     <div className="timeline-item right" data-aos="slide-right" data-wow-delay="0.1s">
                         <div className="timeline-text">
-                            <div className="timeline-date">June 2023 - Present</div>
+                            <div className="timeline-date">July 2023 - Present</div>
                             <h2>Head of IT/ Digital Marketing Media (Remote)</h2>
                             <h4>Madigon Music, California, United States</h4>
                             <p>

@@ -74,7 +74,7 @@ const Service = () => {
                                 </div>
                             </div>
                             <div className="service-text">
-                                <h3>{value.title} {value.skills}%</h3>
+                                <h3>{value.title}</h3>
                                 <p style={{ fontSize: '14px' }}>
                                     {value.text}
                                 </p>
