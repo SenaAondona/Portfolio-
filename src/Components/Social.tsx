@@ -1,7 +1,7 @@
 import whatsapp from '../assets/whatsapp.png';
 const Social = () => {
-  return (
-    <div className="team" id="team">
+    return (
+        <div className="team" id="team">
             <div className="container">
                 <div className="section-header text-center" data-aos="zoom" data-aos-delay="0.1s">
                     <p>My Socials</p>
@@ -15,15 +15,13 @@ const Social = () => {
                             </div>
                             <div className="team-text">
                                 <h2>Sena Aondona</h2>
-                                <h4>Web Designer</h4>
+                                <h4>Digital Strategist/Marketer | Website Developer/Manager | IT Support</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    Connect with me!
                                 </p>
                                 <div className="team-social">
-                                    <a className="btn" target='_blank' href=" https://www.youtube.com/@Tech.Herstory "><i className="fab fa-youtube"></i></a>
-                                    <a className="btn" target='_blank' href="https://www.facebook.com/profile.php?id=61553217032445&mibextid=LQQJ4d "><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn" target='_blank' href=" http://linkedin.com/in/sena-aondona "><i className="fab fa-linkedin-in"></i></a>
-                                    <a className="btn" target='_blank' href="https://instagram.com/techherstory?igshid=MWlmY3NuOGszajlmMg%3D%3D&utm_source=qr "><i className="fab fa-instagram"></i></a>
+                                    <a className="btn" target='_blank' href="http://linkedin.com/in/sena-aondona"><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn" href="mailto:senaaondonajulia@gmail.com"><i className="fa fa-envelope "></i></a>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +35,7 @@ const Social = () => {
                                 <h2>My whatsapp Link</h2>
                                 {/* <h4>Web Developer</h4> */}
                                 <p>
-                                    Scan this code with your whatsapp camera to connect with me
+                                    Scan this code with your whatsapp camera or click <a target='_blank' href="https://wa.me/2347087567397?text=I+would+like+to+know+more+about+the+service+you+offer">here</a> to connect with me
                                 </p>
                                 {/* <div className="team-social">
                                     <a className="btn" href=""><i className="fab fa-twitter"></i></a>
@@ -91,7 +89,7 @@ const Social = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Social

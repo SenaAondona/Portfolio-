@@ -37,7 +37,7 @@ const About = () => {
                                         As an IT support expert, Sena is the go-to person for troubleshooting and problem-solving. Her technical prowess ensures that digital hiccups are swiftly resolved, keeping the virtual gears turning smoothly.<br />
                                         In a world where the digital landscape is often a complex puzzle, Sena Julia Aondona stands out as the skilled strategist, the creative developer, and the reliable IT support expert who weaves magic in the digital realm. With a track record of success and a commitment to staying at the forefront of industry trends.<br />
                                         Not content with personal success alone, Sena is also the visionary founder of "Techherstory," a groundbreaking brand and movement dedicated to empowering women in technology and beyond. Through mentorship, resources, and community support, Techherstory aims to bridge the gender gap in tech and challenge stereotypes.
-                                        Sena's commitment to diversity and empowerment makes her not just a digital virtuoso but also a passionate advocate shaping the future of tech through innovation and dedication to positive impact
+                                        Sena's commitment to diversity and empowerment makes her not just a digital virtuoso but also a passionate advocate shaping the future of tech through innovation and dedication to positive impact.
                                     </p>
                                 </div>
                                 {/* <div className="skills">

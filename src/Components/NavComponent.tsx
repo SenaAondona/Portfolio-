@@ -21,32 +21,32 @@ export const NavComponent = () => {
         },
         {
             href: "#experience",
-            title: "Experiment"
+            title: "Experience"
         },
         {
             href: "#portfolio",
             title: "Portfolio"
         },
         {
-            href: "#price",
-            title: "Price"
+            href: "#prices",
+            title: "TechHerStory"
         },
         {
             href: "#review",
-            title: "Review"
+            title: "Testimonials"
         },
         {
             href: "#team",
-            title: "Team"
-        },
-        {
-            href: "#blog",
-            title: "Blog"
-        },
-        {
-            href: "#contact",
             title: "Contact"
         },
+        // {
+        //     href: "#blog",
+        //     title: "Blog"
+        // },
+        // {
+        //     href: "#contact",
+        //     title: "Contact"
+        // },
     ];
 
     // const event = useRef();

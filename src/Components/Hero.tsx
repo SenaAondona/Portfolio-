@@ -50,8 +50,10 @@ export const Hero = () => {
                                 <p>I'm</p>
                                 <h1>Sena Aondona</h1>
                                 <ReactTypingEffect
+                                speed={1}
+                                eraseSpeed={1}
                                     className='d-flex'
-                                    text={["Digital Strategist", "Digital Marketer", "Video Editor", "Data Analyst", "Web Developer", "IT Supports", "Graphic Designer"]}
+                                    text={["Digital Strategist/Marketer", "Website Developer/Manager", "IT Support"]}
                                 />
                                 {/* <h2 ref={el}></h2> */}
                                 <p className="about">
@@ -89,8 +91,8 @@ export const Hero = () => {
                                 {/* <div className="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div> */}
                             </div>
                             <div className="hero-btn">
-                                <a className="btn" style={{ borderRadius: 0 }} href="">Hire Me</a>
-                                <a className="btn" style={{ borderRadius: 0 }} href="">Contact Me</a>
+                                {/* <a className="btn" style={{ borderRadius: 0 }} href="">Hire Me</a> */}
+                                <a className="btn" style={{ borderRadius: 0 }} href="#team">Contact Me</a>
                             </div>
                         </div>
                     </div>

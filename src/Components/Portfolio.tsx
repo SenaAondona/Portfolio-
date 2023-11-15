@@ -23,7 +23,7 @@ const Portfolio = () => {
                                 <img src="img/portfolio-1.jpg" alt="Image" />
                             </div>
                             <div className="portfolio-text">
-                                <h3>eCommerce Website</h3>
+                                <h3>Graphics</h3>
                                 <a className="btn plus" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
                             </div>
                         </div>
