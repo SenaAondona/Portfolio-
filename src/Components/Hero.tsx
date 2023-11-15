@@ -30,16 +30,16 @@ import Modal from 'react-bootstrap/Modal';
 
 export const Hero = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const paragraphStyle = {
-        display: '-webkit-box',
-        WebkitLineClamp: 4,
-        WebkitBoxOrient: 'vertical',
-        overflow: 'hidden'
+    // const paragraphStyle = {
+    //     display: '-webkit-box',
+    //     WebkitLineClamp: 4,
+    //     WebkitBoxOrient: 'vertical',
+    //     overflow: 'hidden'
 
-    };
+    // };
 
     const handleClose = () => setIsOpen(false);
-    const handleShow = () => setIsOpen(true);
+    // const handleShow = () => setIsOpen(true);
     return (
         <section className="hero" id="home">
             <div className="container-fluid">

@@ -1,17 +1,17 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 // import ReactWOW from 'react-wow'
 
 const About = () => {
-    const [progress, setProgress] = useState({
-        first: 0,
-        second: 0,
-        third: 0,
-        fourth: 0
-    });
+    // const [progress, setProgress] = useState({
+    //     first: 0,
+    //     second: 0,
+    //     third: 0,
+    //     fourth: 0
+    // });
 
-    const handleProgress = (index: string, value: number) => {
-        setProgress(pv => ({ ...pv, [index]: value }))
-    }
+    // const handleProgress = (index: string, value: number) => {
+    //     setProgress(pv => ({ ...pv, [index]: value }))
+    // }
 
     return (
         <section id="about">
