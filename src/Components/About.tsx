@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-// import ReactWOW from 'react-wow'
+import about from '../assets/about.jpg'
 
 const About = () => {
     // const [progress, setProgress] = useState({
@@ -85,7 +85,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-8">
                             <div className="about-img">
-                                <img src="img/about.jpg" alt="Image" />
+                                <img src={about} alt="Image" />
                             </div>
                         </div>
                     </div>

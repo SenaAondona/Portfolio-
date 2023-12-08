@@ -18,15 +18,15 @@ const Portfolio = () => {
                 </div>
                 <div className="row portfolio-container">
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1" data-aos="fade-up" data-aos-delay="0.0s">
-                        <div className="portfolio-wrap">
+                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio" className="portfolio-wrap">
                             <div className="portfolio-img">
                                 <img src="img/portfolio-1.jpg" alt="Image" />
                             </div>
                             <div className="portfolio-text">
                                 <h3>Graphics</h3>
-                                <a className="btn plus" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
+                                <a href="#" className="btn plus">+</a>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2" data-aos="fade-up" data-aos-delay="0.2s">
                         <div className="portfolio-wrap">

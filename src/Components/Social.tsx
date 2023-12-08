@@ -1,4 +1,5 @@
 import whatsapp from '../assets/whatsapp.png';
+import social from '../assets/social.jpg';
 const Social = () => {
     return (
         <div className="team" id="team">
@@ -11,7 +12,7 @@ const Social = () => {
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0.0s">
                         <div className="team-item">
                             <div className="team-img">
-                                <img src="img/team-1.jpg" alt="Image" />
+                                <img src={social} style={{height: '245px'}} alt="Image" />
                             </div>
                             <div className="team-text">
                                 <h2>Sena Aondona</h2>

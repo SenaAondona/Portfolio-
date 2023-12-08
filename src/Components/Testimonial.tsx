@@ -1,54 +1,67 @@
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import peace from '../assets/peace.jpeg';
+import maduka from '../assets/maduka.jpg';
+import joy from '../assets/joy.jpg';
 const Testimonial = () => {
-  return (
-    <div className="testimonial fadeInUp" data-aos="fade-up" data-aos-delay="0.1s" id="review">
+    return (
+        <div className="testimonial fadeInUp" data-aos="fade-up" data-aos-delay="0.1s" id="review">
             <div className="container">
                 <div className="testimonial-icon">
                     <i className="fa fa-quote-left"></i>
                 </div>
-                <OwlCarousel className="testimonials-carousel" loop margin={10} nav items={1}>
+                <OwlCarousel className="testimonials-carousel" loop margin={10} nav items={1} autoplay>
                     <div className="testimonial-item">
                         <div className="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image" />
+                            <img src={peace} alt="Image" />
                         </div>
                         <div className="testimonial-text">
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                                Working alongside Ms. Sena has been a game-changer. Her strategic
+                                prowess in digital marketing is unmatched. Her ability to craft
+                                innovative campaigns and drive exceptional results has not only
+                                impressed me but elevated our team's performance
                             </p>
-                            <h3>Customer Name</h3>
+                            <h3>Peace Amaugo</h3>
                             <h4>Profession</h4>
                         </div>
                     </div>
                     <div className="testimonial-item">
                         <div className="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image" />
+                            <img src={maduka} alt="Image" />
                         </div>
                         <div className="testimonial-text">
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                                Working with Ms. Sena has been transformative for Madigon Music. Her digital
+                                marketing expertise and IT support have been instrumental in elevating our
+                                online presence and boosting our streaming platform. Thanks to Her innovative
+                                strategies, our company's visibility has soared, and we've experienced remarkable
+                                growth. Highly recommend
                             </p>
-                            <h3>Customer Name</h3>
+                            <h3>Maduka Donas</h3>
                             <h4>Profession</h4>
                         </div>
                     </div>
                     <div className="testimonial-item">
                         <div className="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image" />
+                            <img src={joy} alt="Image" />
                         </div>
                         <div className="testimonial-text">
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                                Ms. Sena Aondona significantly boosted my online presence and bookings
+                                as a makeup artist. Her expertise in creating excellent content, professional
+                                video editing, and advertising services transformed my digital presence. Highly
+                                recommended for any digital marketing needs!
                             </p>
-                            <h3>Customer Name</h3>
+                            <h3>Joy Iwu</h3>
                             <h4>Profession</h4>
                         </div>
                     </div>
                 </OwlCarousel>
             </div>
         </div>
-  )
+    )
 }
 
 export default Testimonial
