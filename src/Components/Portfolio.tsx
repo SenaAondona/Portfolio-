@@ -124,7 +124,7 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </div>}
-                    {section === "christmas" && <div className="row article-carousel">
+                    {section === "christmas" && <div className="row article-carousel g-2">
                         <div className="col-12 col-md-4">
                             <a target="_blank" href="img/strategy/Christmas/TSC_PROMOTIONAL_STRATEGY.pdf" className="article-link">
                                 <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
@@ -153,7 +153,7 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </div>}
-                    {section === "summer" && <div className="row article-carousel">
+                    {section === "summer" && <div className="row article-carousel g-2">
                         <div className="col-12 col-md-4">
                             <a target="_blank" href="img/strategy/Summer/SUMMER_AT_THE_SLATE_2021_CONTENT_CALENDAR.pdf" className="article-link">
                                 <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />

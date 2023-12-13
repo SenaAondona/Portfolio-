@@ -40,7 +40,7 @@ const Testimonial = () => {
                                 growth. Highly recommend
                             </p>
                             <h3>Maduka Donas</h3>
-                            <h4>Farmer</h4>
+                            <h4>CEO Madigon Music</h4>
                         </div>
                     </div>
                     <div className="testimonial-item">
