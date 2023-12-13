@@ -1,6 +1,6 @@
 const Experience = () => {
     return (
-        <div className="experience" id="experience">
+        <div className="experience" style={{width: "100%", overflow: "hidden"}} id="experience">
             <div className="container">
                 <header className="section-header text-center" data-aos="zoom" data-aos-delay="0.1s">
                     <p>My Resume</p>
