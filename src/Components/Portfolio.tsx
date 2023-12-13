@@ -2,7 +2,6 @@ import ImageGallery from "react-image-gallery";
 import Modal from "./Modal";
 import { useState } from "react";
 import { LinkPreview } from "@dhaiwat10/react-link-preview";
-import OwlCarousel from "react-owl-carousel";
 const Portfolio = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [section, setSection] = useState("");
@@ -48,31 +47,31 @@ const Portfolio = () => {
             thumbnail: "img/graphics/image10.png",
         },
     ];
-    const articles = [
-        {
-            links: <LinkPreview url='https://thenationonlineng.net/empowering-future-innovators-the-slate-center-unleashes-robotics-gurus-and-celebrity-tutors-to-ignite-childrens-skills-this-summer/' width='400px' />
-        },
-        {
-            links: <LinkPreview url='https://senaaondonajulia.medium.com/5-tips-that-have-helped-me-avert-profound-depression-4772222bf8f5' width='400px' />
-        },
-        {
-            links: <LinkPreview url='https://senaaondonajulia.medium.com/how-to-record-on-youtube-tv-with-dvr-feature-1f1f46d14304' width='400px' />
-        }
-    ];
-    const images = [
-        {
-            original: "https://picsum.photos/id/1018/1000/600/",
-            thumbnail: "https://picsum.photos/id/1018/250/150/",
-        },
-        {
-            original: "https://picsum.photos/id/1015/1000/600/",
-            thumbnail: "https://picsum.photos/id/1015/250/150/",
-        },
-        {
-            original: "https://picsum.photos/id/1019/1000/600/",
-            thumbnail: "https://picsum.photos/id/1019/250/150/",
-        },
-    ];
+    // const articles = [
+    //     {
+    //         links: <LinkPreview url='https://thenationonlineng.net/empowering-future-innovators-the-slate-center-unleashes-robotics-gurus-and-celebrity-tutors-to-ignite-childrens-skills-this-summer/' width='400px' />
+    //     },
+    //     {
+    //         links: <LinkPreview url='https://senaaondonajulia.medium.com/5-tips-that-have-helped-me-avert-profound-depression-4772222bf8f5' width='400px' />
+    //     },
+    //     {
+    //         links: <LinkPreview url='https://senaaondonajulia.medium.com/how-to-record-on-youtube-tv-with-dvr-feature-1f1f46d14304' width='400px' />
+    //     }
+    // ];
+    // const images = [
+    //     {
+    //         original: "https://picsum.photos/id/1018/1000/600/",
+    //         thumbnail: "https://picsum.photos/id/1018/250/150/",
+    //     },
+    //     {
+    //         original: "https://picsum.photos/id/1015/1000/600/",
+    //         thumbnail: "https://picsum.photos/id/1015/250/150/",
+    //     },
+    //     {
+    //         original: "https://picsum.photos/id/1019/1000/600/",
+    //         thumbnail: "https://picsum.photos/id/1019/250/150/",
+    //     },
+    // ];
     const handleOpen = (folder: string) => {
         setIsOpen(true)
         setSection(folder);
