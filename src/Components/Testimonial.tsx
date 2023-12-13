@@ -24,7 +24,7 @@ const Testimonial = () => {
                                 impressed me but elevated our team's performance
                             </p>
                             <h3>Peace Amaugo</h3>
-                            <h4>Digital marketer</h4>
+                            <h4>Digital Marketer</h4>
                         </div>
                     </div>
                     <div className="testimonial-item">
@@ -55,7 +55,7 @@ const Testimonial = () => {
                                 recommended for any digital marketing needs!
                             </p>
                             <h3>Joy Iwu</h3>
-                            <h4>Make up artist</h4>
+                            <h4>Makeup Artist</h4>
                         </div>
                     </div>
                 </OwlCarousel>
