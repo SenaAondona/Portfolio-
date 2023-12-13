@@ -1,7 +1,7 @@
 import ImageGallery from "react-image-gallery";
 import Modal from "./Modal";
 import { useState } from "react";
-import { LinkPreview } from "@dhaiwat10/react-link-preview";
+// import { LinkPreview } from "@dhaiwat10/react-link-preview";
 const Portfolio = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [section, setSection] = useState("");
