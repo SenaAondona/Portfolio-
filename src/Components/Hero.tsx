@@ -50,8 +50,8 @@ export const Hero = () => {
                                 <p>I'm</p>
                                 <h1>Sena Aondona</h1>
                                 <ReactTypingEffect
-                                speed={1}
-                                eraseSpeed={1}
+                                speed={3}
+                                eraseSpeed={3}
                                     className='d-flex'
                                     text={["Digital Strategist/Marketer", "Website Developer/Manager", "IT Support"]}
                                 />
