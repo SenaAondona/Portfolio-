@@ -56,7 +56,7 @@ export const Hero = () => {
                                     text={["Digital Strategist/Marketer", "Website Developer/Manager", "IT Support"]}
                                 />
                                 {/* <h2 ref={el}></h2> */}
-                                <p className="about">
+                                <p className="about mt-4">
                                     Meet Sena Julia Aondona, a dynamic force in the digital realm with a passion for transforming ideas into online success stories. With a rich tapestry of skills, Sena is not just a digital strategist and marketer; she's a seasoned website manager and developer, as well as a reliable IT support expert.
                                 </p>
                                 {/* <ReadMore>
