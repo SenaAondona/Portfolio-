@@ -8,7 +8,6 @@ import graphics from '../Data/graphics';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { Player } from 'video-react';
 import 'video-react/dist/video-react.css';
 
 import { Video } from 'react-video-ts'
