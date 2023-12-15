@@ -23,7 +23,10 @@ const Portfolio = () => {
         setSection(folder);
     }
     const [currentVideo, setCurrentVideo] = useState<number>(0);
-
+    const handleClose = (ev: boolean | ((prevState: boolean) => boolean)) => { 
+        setIsOpen(ev);
+        setSection("");
+     }
     return (
         <div className="portfolio" id="portfolio">
             <div className="container">
@@ -41,7 +44,7 @@ const Portfolio = () => {
                         </ul>
                     </div>
                 </div> */}
-                <Modal isOpen={isOpen} onClose={(ev: boolean | ((prevState: boolean) => boolean)) => setIsOpen(ev)}>
+                <Modal isOpen={isOpen} onClose={ev=>handleClose(ev)}>
                     {section === "graphics" && <ImageGallery items={graphics} />}
                     {section === "articles" && <div className="row article-carousel">
                         <div className="col-12 col-md-4">
