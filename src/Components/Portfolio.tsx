@@ -10,8 +10,9 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'video-react/dist/video-react.css';
 
-import { Video } from 'react-video-ts'
+// import { Video } from 'react-video-ts'
 import 'react-video-ts/dist/index.css'
+import { Player } from "video-react";
 
 // import { LinkPreview } from "@dhaiwat10/react-link-preview";
 const Portfolio = () => {
@@ -139,8 +140,8 @@ const Portfolio = () => {
                     {section === "photo" && <ImageGallery items={photos} />}
                     {section === "video" && <div className="position-relative w-100">
                         <div className="video-wrapper">
-                            <Video video={videos[currentVideo].src} >
-                            </Video>
+                            <Player src={videos[currentVideo].src} >
+                            </Player>
                         </div>
 
                         <div className="video-playlist">
