@@ -1,81 +1,29 @@
 import ImageGallery from "react-image-gallery";
 import Modal from "./Modal";
-import { useState } from "react";
+import { Children, useState } from "react";
+import photos from '../Data/photo';
+import videos from '../Data/video';
+import codes from '../Data/code';
+import graphics from '../Data/graphics';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Player } from 'video-react';
+import 'video-react/dist/video-react.css';
+
+import { Video } from 'react-video-ts'
+import 'react-video-ts/dist/index.css'
+
 // import { LinkPreview } from "@dhaiwat10/react-link-preview";
 const Portfolio = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [section, setSection] = useState("");
-    const graphics = [
-        {
-            original: "img/graphics/image1.jpeg",
-            thumbnail: "img/graphics/image1.jpeg",
-        },
-        {
-            original: "img/graphics/image2.png",
-            thumbnail: "img/graphics/image2.png",
-        },
-        {
-            original: "img/graphics/image3.jpeg",
-            thumbnail: "img/graphics/image3.jpeg",
-        },
-        {
-            original: "img/graphics/image4.jpeg",
-            thumbnail: "img/graphics/image4.jpeg",
-        },
-        {
-            original: "img/graphics/image5.jpeg",
-            thumbnail: "img/graphics/image5.jpeg",
-        },
-        {
-            original: "img/graphics/image6.jpeg",
-            thumbnail: "img/graphics/image6.jpeg",
-        },
-        {
-            original: "img/graphics/image7.jpeg",
-            thumbnail: "img/graphics/image7.jpeg",
-        },
-        {
-            original: "img/graphics/image8.png",
-            thumbnail: "img/graphics/image8.png",
-        },
-        {
-            original: "img/graphics/image9.jpeg",
-            thumbnail: "img/graphics/image9.jpeg",
-        },
-        {
-            original: "img/graphics/image10.png",
-            thumbnail: "img/graphics/image10.png",
-        },
-    ];
-    // const articles = [
-    //     {
-    //         links: <LinkPreview url='https://thenationonlineng.net/empowering-future-innovators-the-slate-center-unleashes-robotics-gurus-and-celebrity-tutors-to-ignite-childrens-skills-this-summer/' width='400px' />
-    //     },
-    //     {
-    //         links: <LinkPreview url='https://senaaondonajulia.medium.com/5-tips-that-have-helped-me-avert-profound-depression-4772222bf8f5' width='400px' />
-    //     },
-    //     {
-    //         links: <LinkPreview url='https://senaaondonajulia.medium.com/how-to-record-on-youtube-tv-with-dvr-feature-1f1f46d14304' width='400px' />
-    //     }
-    // ];
-    // const images = [
-    //     {
-    //         original: "https://picsum.photos/id/1018/1000/600/",
-    //         thumbnail: "https://picsum.photos/id/1018/250/150/",
-    //     },
-    //     {
-    //         original: "https://picsum.photos/id/1015/1000/600/",
-    //         thumbnail: "https://picsum.photos/id/1015/250/150/",
-    //     },
-    //     {
-    //         original: "https://picsum.photos/id/1019/1000/600/",
-    //         thumbnail: "https://picsum.photos/id/1019/250/150/",
-    //     },
-    // ];
     const handleOpen = (folder: string) => {
         setIsOpen(true)
         setSection(folder);
     }
+    const [currentVideo, setCurrentVideo] = useState<number>(0);
+
     return (
         <div className="portfolio" id="portfolio">
             <div className="container">
@@ -124,64 +72,87 @@ const Portfolio = () => {
                             </a>
                         </div>
                     </div>}
-                    {section === "christmas" && <div className="row article-carousel g-2">
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Christmas/TSC_PROMOTIONAL_STRATEGY.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">TSC Promotional Strategy</span>
-                                    {/* <span className="article-site">thenationonlineng.net</span> */}
+                    {section === "christmas" && <div className="container">
+                        <div className="bg-white pt-2 px-4">
+                            <h3>Chrismas Camp</h3>
+                            <div className="row article-carousel g-2">
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Christmas/TSC_PROMOTIONAL_STRATEGY.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">TSC Promotional Strategy</span>
+                                            {/* <span className="article-site">thenationonlineng.net</span> */}
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Christmas/SOCIAL_MEDIA CALENDAR_FOR_TSL_COMPLETED.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">Social Media Calendar for TSL</span>
-                                    {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Christmas/SOCIAL_MEDIA CALENDAR_FOR_TSL_COMPLETED.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">Social Media Calendar for TSL</span>
+                                            {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Christmas/CHRISTMAS_CAMP_CONTENT_PLAN.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">Christmas Camp Content Plan</span>
-                                    {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Christmas/CHRISTMAS_CAMP_CONTENT_PLAN.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">Christmas Camp Content Plan</span>
+                                            {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                            <h3>Summer Camp</h3>
+                            <div className="row article-carousel g-2">
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Summer/SUMMER_AT_THE_SLATE_2021_CONTENT_CALENDAR.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">Summer at the Slate 2021 Content Calendar</span>
+                                            {/* <span className="article-site">thenationonlineng.net</span> */}
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Summer/SUMMER_AT_THE_SLATE_2021_CONTENT_PLAN.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">Summer at the Slate 2021 Content Plan</span>
+                                            {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="col-12 col-md-4">
+                                    <a target="_blank" href="img/strategy/Summer/TSC_SUMMER_2021_PROMOTIONAL_STRATEGY.pdf" className="article-link">
+                                        <img src="img/strategy/pdf.png" alt="" style={{ objectFit: "contain" }} className="article-image" />
+                                        <div className="article-text">
+                                            <span className="article-title">TSC Summer 2021 Promotional Strategy</span>
+                                            {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>}
-                    {section === "summer" && <div className="row article-carousel g-2">
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Summer/SUMMER_AT_THE_SLATE_2021_CONTENT_CALENDAR.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">Summer at the Slate 2021 Content Calendar</span>
-                                    {/* <span className="article-site">thenationonlineng.net</span> */}
-                                </div>
-                            </a>
+                    {section === "photo" && <ImageGallery items={photos} />}
+                    {section === "video" && <div className="position-relative w-100">
+                        <div className="video-wrapper">
+                            <Video video={videos[currentVideo].src} >
+                            </Video>
                         </div>
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Summer/SUMMER_AT_THE_SLATE_2021_CONTENT_PLAN.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">Summer at the Slate 2021 Content Plan</span>
-                                    {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
-                                </div>
-                            </a>
+
+                        <div className="video-playlist">
+                            <OwlCarousel className="testimonials-carousel" loop margin={10} nav items={12} autoplay style={{height: "100%"}}>
+                                {Children.toArray([1,2,3,4,5,6,7,8].map(value=>(<img onClick={()=>setCurrentVideo(value-1)} className="img-thumbnail" style={{height: "100%"}} src={`img/videos/video_${value}.jpg`} alt="Image not found" />)))}
+                            </OwlCarousel>
                         </div>
-                        <div className="col-12 col-md-4">
-                            <a target="_blank" href="img/strategy/Summer/TSC_SUMMER_2021_PROMOTIONAL_STRATEGY.pdf" className="article-link">
-                                <img src="img/strategy/pdf.png" alt="" style={{height: "auto"}} className="article-image" />
-                                <div className="article-text">
-                                    <span className="article-title">TSC Summer 2021 Promotional Strategy</span>
-                                    {/* <span className="article-site">senaaondonajulia.medium.com</span> */}
-                                </div>
-                            </a>
-                        </div>
-                    </div>}
+                    </div>
+
+                    }
+                    {section === "code" && <ImageGallery items={codes} />}
                 </Modal>
                 <div className="row portfolio-container">
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1" data-aos="fade-up" data-aos-delay="0.0s">
@@ -212,24 +183,24 @@ const Portfolio = () => {
                                 <img src="img/strategy/strategy.jpg" alt="Image" />
                             </div>
                             <div className="portfolio-text">
-                                <h3>Christmas Camp Marketing Strategy</h3>
+                                <h3>Marketing Strategy</h3>
                                 <a className="btn plus" href="#">+</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1" data-aos="fade-up" data-aos-delay="0.6s">
-                        <div className="portfolio-wrap" onClick={() => handleOpen("summer")}>
+                        <div className="portfolio-wrap" onClick={() => handleOpen("photo")}>
                             <div className="portfolio-img">
-                                <img src="img/strategy/office.jpg" alt="Image" />
+                                <img src="img/photography/camera.jpg" alt="Image" />
                             </div>
                             <div className="portfolio-text">
-                                <h3>Summer Camp Marketing Strategy</h3>
+                                <h3>Photography</h3>
                                 <a className="btn plus" href="#">+</a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2" data-aos="fade-up" data-aos-delay="0.8s">
-                        <div className="portfolio-wrap">
+                        <div className="portfolio-wrap" onClick={() => handleOpen("code")}>
                             <div className="portfolio-img">
                                 <img src="img/web/webdev.jpg" alt="Image" />
                             </div>
@@ -240,12 +211,12 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3" data-aos="fade-up" data-aos-delay="1s">
-                        <div className="portfolio-wrap">
+                        <div className="portfolio-wrap" onClick={() => handleOpen("video")}>
                             <div className="portfolio-img">
                                 <img src="img/videos/video.jpg" alt="Image" />
                             </div>
                             <div className="portfolio-text">
-                                <h3>Videos</h3>
+                                <h3>Videography</h3>
                                 <a className="btn plus" href="#">+</a>
                             </div>
                         </div>

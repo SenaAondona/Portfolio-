@@ -11,12 +11,27 @@
     cursor: pointer;
     z-index: 9999;
     padding: 10px;
-    align-items: center;
+    /* align-items: center; */
+    overflow: auto;
   }
   .close {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 10px;
     color: #ccc;
     z-index: 99999;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  .video-playlist {
+    /* position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    height: 100px;
+    z-index: 99;
+    background-color: #ccc;
   }
