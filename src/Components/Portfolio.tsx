@@ -44,7 +44,7 @@ const Portfolio = () => {
                         </ul>
                     </div>
                 </div> */}
-                <Modal isOpen={isOpen} onClose={ev=>handleClose(ev)}>
+                <Modal isOpen={isOpen} onClose={(ev: boolean | ((prevState: boolean) => boolean))=>handleClose(ev)}>
                     {section === "graphics" && <ImageGallery items={graphics} />}
                     {section === "articles" && <div className="row article-carousel">
                         <div className="col-12 col-md-4">
