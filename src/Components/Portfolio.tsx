@@ -11,7 +11,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'video-react/dist/video-react.css';
 
 // import { Video } from 'react-video-ts'
-import 'react-video-ts/dist/index.css'
+// import 'react-video-ts/dist/index.css'
 import { Player } from "video-react";
 
 // import { LinkPreview } from "@dhaiwat10/react-link-preview";
