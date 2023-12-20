@@ -4,11 +4,12 @@ import { Children, useState } from "react";
 import photos from '../Data/photo';
 import videos from '../Data/video';
 import codes from '../Data/code';
+import play from '../assets/play.png';
 import graphics from '../Data/graphics';
-import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'video-react/dist/video-react.css';
+import { useMediaQuery } from 'react-responsive'
 
 // import { Video } from 'react-video-ts'
 // import 'react-video-ts/dist/index.css'
@@ -23,10 +24,11 @@ const Portfolio = () => {
         setSection(folder);
     }
     const [currentVideo, setCurrentVideo] = useState<number>(0);
-    const handleClose = (ev: boolean | ((prevState: boolean) => boolean)) => { 
+    const handleClose = (ev: boolean | ((prevState: boolean) => boolean)) => {
         setIsOpen(ev);
         setSection("");
-     }
+    }
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     return (
         <div className="portfolio" id="portfolio">
             <div className="container">
@@ -44,7 +46,7 @@ const Portfolio = () => {
                         </ul>
                     </div>
                 </div> */}
-                <Modal isOpen={isOpen} onClose={(ev: boolean | ((prevState: boolean) => boolean))=>handleClose(ev)}>
+                <Modal isOpen={isOpen} onClose={(ev: boolean | ((prevState: boolean) => boolean)) => handleClose(ev)}>
                     {section === "graphics" && <ImageGallery items={graphics} />}
                     {section === "articles" && <div className="row article-carousel">
                         <div className="col-12 col-md-4">
@@ -142,15 +144,28 @@ const Portfolio = () => {
                     </div>}
                     {section === "photo" && <ImageGallery items={photos} />}
                     {section === "video" && <div className="position-relative w-100">
-                        <div className="video-wrapper">
-                            <Player src={videos[currentVideo].src} >
-                            </Player>
-                        </div>
+                        <div className="row g-2">
+                            {!isMobile && <>
+                                <div className="col-10" style={{ height: '100%', overflow: 'hidden' }}>
+                                    <Player src={videos[currentVideo].src}></Player>
 
-                        <div className="video-playlist">
-                            <OwlCarousel className="testimonials-carousel" loop margin={10} nav items={12} autoplay style={{height: "100%"}}>
-                                {Children.toArray([1,2,3,4,5,6,7,8].map(value=>(<img onClick={()=>setCurrentVideo(value-1)} className="img-thumbnail" style={{height: "100%"}} src={`img/videos/video_${value}.jpg`} alt="Image not found" />)))}
-                            </OwlCarousel>
+                                </div>
+                                <div className="col-2 relative" style={{ maxHeight: '100vh', overflow: 'auto' }}>
+                                    {Children.toArray([1, 2, 3, 4, 5, 6, 7, 8].map(value => (<div className="position-relative">
+                                        <img onClick={() => setCurrentVideo(value - 1)} className="img-thumbnail" style={{ width: "100%", marginBottom: '5px' }} src={`img/videos/video_${value}.jpg`} alt="Image not found" />
+                                        <img onClick={() => setCurrentVideo(value - 1)} src={play} alt="play" style={{ width: "50px", position: 'absolute', top: '40%', right: '40%' }} />
+                                    </div>)))}
+                                </div>
+                            </>}
+                            {isMobile && <>
+                                <div className="col-12">
+                                    <Player src={videos[currentVideo].src}></Player>
+                                </div>
+                                {Children.toArray([1, 2, 3, 4, 5, 6, 7, 8].map(value => (<div className="col-6" style={{ maxHeight: '100vh', overflow: 'auto', position: 'relative' }}>
+                                    <img onClick={() => setCurrentVideo(value - 1)} className="img-thumbnail" style={{ width: "100%", marginBottom: '5px' }} src={`img/videos/video_${value}.jpg`} alt="Image not found" />
+                                    <img onClick={() => setCurrentVideo(value - 1)} src={play} alt="play" style={{ width: "50px", position: 'absolute', top: '40%', right: '40%' }} />
+                                </div>)))}
+                            </>}
                         </div>
                     </div>
 

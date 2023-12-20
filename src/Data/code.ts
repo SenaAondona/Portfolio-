@@ -1,8 +1,8 @@
-const photos = Array(5).fill(1);
+const photos = Array(7).fill(1);
 const phot = photos.map((value, i)=> {
     return {
-        original: `img/code/code (${value+i+1}).jpg`,
-        thumbnail: `img/code/code (${value+i+1}).jpg`
+        original: `img/web/code-${value+i}.png`,
+        thumbnail: `img/web/code-${value+i}.png`
     }
 });
 export default phot;
